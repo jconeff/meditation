@@ -21,6 +21,17 @@ const app = () => {
     outline.style.strokeDashoffset = outlineLength;
 
 
+    //Pick different sound
+
+    sounds.forEach(sound =>{
+        sound.addEventListener('click', function(){
+            song.src = this.getAttribute('data-sound');
+            video.src = this.getAttribute('data-video');
+            checkPlaying(song);
+        });
+    });
+
+
     //Play Sound
     play.addEventListener("click", () => {
         checkPlaying(song);
@@ -62,6 +73,14 @@ const app = () => {
 
         //Animate Text
         timeDisplay.textContent = `${minutes}:${seconds}`
+
+        if (currentTime >= fakeDuration){
+            song.pause();
+            song.currentTime = 0;
+            play.src = './svg/play.svg';
+            video.pause();
+
+        }
     };
 
 };
