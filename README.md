@@ -3,6 +3,7 @@
 
 ## Purpose
 Application that allows a user to switch between two songs and animations with a set timer. A user that wants to meditate and relax.
+[Deploy App](https://jconeff.github.io/meditation/)
 
 ## Table of Contents
 * [Tools](#Tools)
