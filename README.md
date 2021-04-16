@@ -23,5 +23,5 @@ Application that allows a user to switch between two songs and animations with a
 
 
 ## Credits
-Coded by [Jessica Coneff](https://github.com/jconeff),
+Coded by [Jessica Coneff](https://github.com/jconeff)
 
